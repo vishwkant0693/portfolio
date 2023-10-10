@@ -30,7 +30,7 @@ const Home = (props) => {
                     <GitHubIcon className='mx-2' href="https://github.com/vishwkant0693" />
                     <InstagramIcon className='mx-2' href="https://www.instagram.com/vishwkant0693/" />
                     <LinkedInIcon className='mx-2' href="https://in.linkedin.com/in/vishw-kant-1855011a4" />
-                    <button type="button" class="btn btn-outline-info mx-2 fw-bold" style={style}>Download Resume</button>
+                    <button type="button" className="btn btn-outline-info mx-2 fw-bold" style={style}>Download Resume</button>
                   </div>
                 </div>
                 <div className="col-md-4" style={{margin:"auto"}}>
@@ -60,7 +60,7 @@ const Home = (props) => {
               <Experience mode={props.mode} />
             </div>
             <div id='get-in-touch'>
-              <Contact mode={props.mode} />
+              <Contact mode={props.mode}/>
             </div>
             <div>
               <div className="card-body" style={{
