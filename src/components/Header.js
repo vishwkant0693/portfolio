@@ -14,10 +14,10 @@ const Header = (props) => {
           <div className='one'>
             <img src="img/Portfolio.png" alt="Bootstrap" width="200" height="28" />
           </div>
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent"></div>
           <div style={style} >
             <ul className="navbar nav nav-underline collapse navbar-collapse" id="navbarNavAltMarkup">
               <ScrollToSection />
@@ -46,7 +46,7 @@ const Header = (props) => {
                 <div className="two">
                   <div className="form-check form-switch r-0 two">
                     <input className='form-check-input' type="checkbox" role="switch" onClick={props.toggleMode} id="flexSwitchCheckDefault" />
-                    <label className="form-check-label" for="flexSwitchCheckDefault">Enable {props.color} Mode</label>
+                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable {props.color} Mode</label>
                   </div>
                 </div>
               </li>
