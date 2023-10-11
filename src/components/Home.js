@@ -8,6 +8,7 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Experience from './Experience';
 import Contact from './Contact';
+import ScrollToSection from './scroll';
 
 const Home = (props) => {
   const style = {
@@ -17,7 +18,7 @@ const Home = (props) => {
 
   return (
     <>
-      <div className="container mb-3" id='home' style={{marginTop:"100px"}}>
+      <div className="container mb-3" id='home' style={{marginTop:"80px"}}>
         <div className="row">
           <div className="col-md-1"></div>
           <div className="col-md-10 col-12 border border-info rounded ">
@@ -34,7 +35,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="col-md-4" style={{margin:"auto"}}>
-                  <img src="img/profile-pic.png" alt="" style={{height:"17rem"}}  />
+                  <img src="img/profile-pic.png" alt="" style={{height:"19ch"}}  />
                 </div>
               </div>
             </div>
@@ -68,7 +69,8 @@ const Home = (props) => {
                 color: props.mode === "light" ? "black" : "white"
               }} >
                 <div>
-                  <a href="#navbar" className="list-group-item list-group-item-action p-3" style={style}><img src="img/up.png" className='mx-2' style={{ width: "20px", height: "20px" }} alt="" />Back to Top</a>
+                <ScrollToSection/>
+                  <a href="#home" className="back-link list-group-item list-group-item-action p-3" style={style}><img src="img/up.png" className='mx-2' style={{ width: "20px", height: "20px" }} alt="" />Back to Top</a>
                 </div>
               </div>
             </div>

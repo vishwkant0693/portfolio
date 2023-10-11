@@ -4,7 +4,8 @@ import ScrollToSection from './scroll'
 const Header = (props) => {
   const style = {
     fontFamily: "'Poppins', sans-serif",
-    textAlign: "center"
+    textAlign: "center",
+    fontSize: "16px"
   }
   return (
     <>
@@ -12,7 +13,7 @@ const Header = (props) => {
         <div className="container-fluid d-flex justify-content-between " >
 
           <div className='one'>
-            <img src="img/Portfolio.png" alt="Bootstrap" width="200" height="28" />
+            <img src="img/Portfolio.png" alt="Bootstrap" width="180" height="24" />
           </div>
           <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -20,7 +21,7 @@ const Header = (props) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent"></div>
           <div style={style} >
             <ul className="navbar nav nav-underline collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ScrollToSection />
+              
               <li className="nav-item">
                 <a className="nav-link" href="#home">Home</a>
               </li>
@@ -55,6 +56,7 @@ const Header = (props) => {
           </div>
         </div>
       </nav>
+      <ScrollToSection />
     </>
   )
 }

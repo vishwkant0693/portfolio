@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 function ScrollToSection() {
   useEffect(() => {
-    $('a.nav-link').on('click', function (event) {
+    $('a.nav-link,a.back-link').on('click', function (event) {
       const target = $($(this).attr('href'));
       if (target.length) {
         event.preventDefault();
@@ -12,7 +12,7 @@ function ScrollToSection() {
 
         $('html, body').animate(
           {
-            scrollTop: targetPosition +"20px",
+            scrollTop: targetPosition,
           },
           100
         );
